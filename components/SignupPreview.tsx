@@ -15,16 +15,16 @@ export default function SignupPreview() {
             <div className="frow">
               <label className="ffield">
                 <span className="flabel">First name</span>
-                <span className="finput">Aisha</span>
+                <span className="finput">Sajid</span>
               </label>
               <label className="ffield">
                 <span className="flabel">Last name</span>
-                <span className="finput">Khan</span>
+                <span className="finput">Jameel</span>
               </label>
             </div>
             <label className="ffield">
               <span className="flabel">Business email</span>
-              <span className="finput">aisha@brightretail.ae</span>
+              <span className="finput">info@codinative.com</span>
             </label>
             <label className="ffield">
               <span className="flabel">Account type</span>
