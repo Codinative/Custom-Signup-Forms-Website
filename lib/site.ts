@@ -5,8 +5,8 @@ export const VENDOR = "Codinative";
 
 /** Links — update these once the listing + app URLs are final. */
 export const LINKS = {
-  // BigCommerce marketplace listing (placeholder until published).
-  marketplace: "https://www.bigcommerce.com/apps/",
+  // BigCommerce marketplace listing (live).
+  marketplace: "https://www.bigcommerce.com/apps/custom-signup-forms-by-codinative/",
   // The live embedded app.
   app: "https://signup.codinative.com/",
   vendor: "https://codinative.com/",
