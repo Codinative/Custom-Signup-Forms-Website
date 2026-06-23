@@ -200,7 +200,7 @@ h1, h2, h3 { letter-spacing: -.02em; line-height: 1.1; margin: 0; }
 .fbtn { margin-top: 4px; text-align: center; font-size: 15px; font-weight: 600; color: #fff; background: var(--accent); border-radius: 10px; padding: 13px; box-shadow: var(--shadow-accent); }
 
 .cfloat {
-  position: absolute; right: -14px; bottom: -16px; background: var(--ink); color: #fff;
+  position: absolute; right: -14px; top: -16px; background: var(--ink); color: #fff;
   border-radius: 14px; padding: 12px 16px; box-shadow: var(--shadow-lg); display: flex; align-items: center; gap: 10px;
 }
 .cfloat svg { width: 19px; height: 19px; color: #34cc92; }
