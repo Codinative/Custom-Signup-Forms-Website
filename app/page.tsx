@@ -14,11 +14,23 @@ const FEATURES = [
   { ic: "palette", t: "On-brand & responsive", d: "Center or split-screen layouts with your own imagery. Forms match your store and work beautifully on desktop and mobile." },
 ];
 
-const FLOW = [
-  { t: "Build your form", d: "Design the signup form in the visual builder - fields, layout, branding - and save it." },
-  { t: "Add the script", d: "Drop the generated script into Script Manager. It replaces the default account page with your form." },
-  { t: "Shoppers apply", d: "Visitors complete your custom form - including file uploads - and their request is captured." },
-  { t: "You approve", d: "Review each request and approve it. The customer account is created and the welcome email goes out." },
+const FLOW_ADMIN = [
+  { n: "01", t: "Install the app", d: "The store owner installs Custom Signup Forms from the BigCommerce marketplace." },
+  { n: "02", t: "Build the form", d: "Design the custom signup fields in the visual builder - exactly what you need to collect." },
+  { n: "03", t: "Activate & embed", d: "Enable the form and embed it on the store's account signup page." },
+  { n: "04", t: "SMTP settings", d: "Add your own email credentials so signup notifications send from your address." },
+];
+
+const FLOW_CUSTOMER = [
+  { n: "05", t: "Visit the store", d: "A shopper lands on the signup page with your embedded custom form." },
+  { n: "06", t: "Fill the form", d: "They complete all of your custom fields, including any file uploads." },
+  { n: "07", t: "Click apply", d: "They submit the application - an email goes to both the store owner and the applicant." },
+];
+
+const FLOW_OUTCOMES = [
+  { ic: "check", tone: "live", t: "Approve", d: "The customer account is created and added to a customer group you choose." },
+  { ic: "x", tone: "danger", t: "Reject", d: "The application is declined and the applicant is notified." },
+  { ic: "refresh", tone: "warn", t: "Request resubmission", d: "Ask the applicant for more information; they update and resubmit." },
 ];
 
 const USECASES = [
@@ -94,40 +106,87 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ---------- How it works ---------- */}
+      {/* ---------- How it works (complete end-to-end flow) ---------- */}
       <section id="how" className="sec alt">
         <div className="wrap">
           <div className="sec-head">
-            <span className="eyebrow"><span className="dot" /> The signup flow</span>
-            <h2 className="h-sec" style={{ marginTop: 12 }}>From application to approved account.</h2>
-            <p className="lead">Four steps - build it once, then review applications as they come in.</p>
-          </div>
-          <div className="flow">
-            {FLOW.map((s, i) => (
-              <div key={s.t} className="fstep">
-                <div className="fstep-n">{i + 1}</div>
-                <h3>{s.t}</h3>
-                <p>{s.d}</p>
-                <span className="fstep-arrow"><Icon name="arrowR" size={22} /></span>
-              </div>
-            ))}
+            <span className="eyebrow"><span className="dot" /> The complete flow</span>
+            <h2 className="h-sec" style={{ marginTop: 12 }}>How it works, end to end.</h2>
+            <p className="lead">From installing the app to approving customers into the right group - every step, for both the store owner and the shopper.</p>
           </div>
 
-          <div className="how-figure">
-            <h3 className="how-figure-title">What the app handles - and what stays your BigCommerce setup</h3>
-            <p className="how-figure-sub">
-              The app manages the signup &amp; approval - it decides <i>who</i> becomes an approved
-              customer and, optionally, which group they land in. It does <b>not</b> block storefront
-              login or hide catalog prices, and it won&apos;t fight an ERP/Acumatica connector that owns
-              customer-group membership.
-            </p>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              className="how-figure-img"
-              src="/how-it-works.svg"
-              alt="How Custom Signup Forms works: 1) build the form, 2) install the script, 3) a shopper applies (no account yet), 4) you review and approve (optionally choose a customer group), 5) the account is created. The app handles the signup form and file uploads, the review and approval queue, creating the approved BigCommerce customer, a one-time optional customer-group assignment, and branded emails. BigCommerce handles login and sign-in, catalog and price visibility, and ongoing customer-group membership such as that pushed by an ERP/Acumatica connector."
-            />
+          <div className="flowmap">
+            {/* Phase 1 - store owner sets up */}
+            <div className="fm-phase">
+              <div className="fm-phase-h"><span className="fm-tag">Store owner</span> Set up the app</div>
+              <div className="fm-grid fm-grid-4 fm-seq">
+                {FLOW_ADMIN.map((s) => (
+                  <div key={s.n} className="fm-step">
+                    <span className="fm-n">{s.n}</span>
+                    <h4>{s.t}</h4>
+                    <p>{s.d}</p>
+                  </div>
+                ))}
+              </div>
+              <p className="fm-note">
+                <Icon name="mail" size={16} />
+                Once SMTP is configured, both the store owner and the applicant get an email on every new signup request.
+              </p>
+            </div>
+
+            {/* Phase 2 - customer applies */}
+            <div className="fm-band"><span>Customer applies</span></div>
+            <div className="fm-phase">
+              <div className="fm-phase-h"><span className="fm-tag warn">Shopper</span> Apply through your form</div>
+              <div className="fm-grid fm-grid-3 fm-seq">
+                {FLOW_CUSTOMER.map((s) => (
+                  <div key={s.n} className="fm-step warn">
+                    <span className="fm-n">{s.n}</span>
+                    <h4>{s.t}</h4>
+                    <p>{s.d}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Phase 3 - admin reviews the request */}
+            <div className="fm-band"><span>You review the request</span></div>
+            <div className="fm-phase">
+              <div className="fm-wide">
+                <span className="fm-n">08</span>
+                <div>
+                  <h4>The request appears in your dashboard</h4>
+                  <p>Open it to see the submitted form and all applicant details, then choose what happens next:</p>
+                </div>
+              </div>
+              <div className="fm-grid fm-grid-3 fm-outs">
+                {FLOW_OUTCOMES.map((o) => (
+                  <div key={o.t} className={`fm-out ${o.tone}`}>
+                    <span className="fm-out-ic"><Icon name={o.ic} size={18} /></span>
+                    <h4>{o.t}</h4>
+                    <p>{o.d}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Phase 4 - on approval */}
+            <div className="fm-band"><span>On approval</span></div>
+            <div className="fm-phase">
+              <div className="fm-wide live">
+                <span className="fm-n">09</span>
+                <div>
+                  <h4>Assign them to a customer group</h4>
+                  <p>Pick the customer group on approval - pricing, catalog access and permissions then update automatically for that customer, exactly as your BigCommerce customer groups are configured.</p>
+                </div>
+              </div>
+            </div>
           </div>
+
+          <p className="fm-foot">
+            Custom Signup Forms manages the signup and approval - who becomes a customer and which group they join.
+            Login, and catalog &amp; price visibility, stay your BigCommerce settings, so it sits happily alongside an ERP/Acumatica connector.
+          </p>
         </div>
       </section>
 
