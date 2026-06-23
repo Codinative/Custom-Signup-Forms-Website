@@ -4,8 +4,10 @@
    ============================================================ */
 
 :root {
-  --font: var(--font-sans), "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  --mono: ui-monospace, "SF Mono", Menlo, monospace;
+  /* One font, site-wide. Inline fallback inside var() prevents the whole
+     declaration from collapsing to the browser-default serif if --font-sans
+     ever fails to load. */
+  --font: var(--font-sans, "Inter"), system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 
   --accent:        #3B82F6;
   --accent-strong: #2563EB;
@@ -181,7 +183,7 @@ h1, h2, h3 { letter-spacing: -.02em; line-height: 1.1; margin: 0; }
 .ccard-head { display: flex; align-items: center; gap: 9px; padding: 15px 18px; border-bottom: 1px solid var(--border-2); background: var(--surface-2); }
 .ccard-dots { display: flex; gap: 6px; }
 .ccard-dots i { width: 10px; height: 10px; border-radius: 50%; background: var(--border); }
-.ccard-url { font-size: 13px; color: var(--text-3); font-family: var(--mono); }
+.ccard-url { font-size: 13px; color: var(--text-3); font-family: var(--font); }
 .ccard-body { padding: 22px; }
 .ccard-step { font-size: 13px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: var(--text-3); margin-bottom: 15px; }
 
