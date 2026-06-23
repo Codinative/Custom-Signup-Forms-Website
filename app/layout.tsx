@@ -6,7 +6,7 @@ const inter = Inter({ variable: "--font-sans", subsets: ["latin"], display: "swa
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://custom-signup-forms.codinative.com"),
-  verification: { google: "w0lBK1_BbNZuWKIXBQi-i8ng8ToKl4t0oRNTGMzu6rU" },
+  verification: { google: "mE51E51lm1Lwm73kSnZ_DXll15Ab0zp2aWaCnir5q2s" },
   title: {
     default: "Custom Signup Forms - custom registration forms for BigCommerce",
     template: "%s - Custom Signup Forms",
