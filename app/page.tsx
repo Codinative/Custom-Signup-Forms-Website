@@ -112,6 +112,22 @@ export default function Home() {
               </div>
             ))}
           </div>
+
+          <div className="how-figure">
+            <h3 className="how-figure-title">What the app handles — and what stays your BigCommerce setup</h3>
+            <p className="how-figure-sub">
+              The app manages the signup &amp; approval — it decides <i>who</i> becomes an approved
+              customer and, optionally, which group they land in. It does <b>not</b> block storefront
+              login or hide catalog prices, and it won&apos;t fight an ERP/Acumatica connector that owns
+              customer-group membership.
+            </p>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              className="how-figure-img"
+              src="/how-it-works.svg"
+              alt="How Custom Signup Forms works: 1) build the form, 2) install the script, 3) a shopper applies (no account yet), 4) you review and approve (optionally choose a customer group), 5) the account is created. The app handles the signup form and file uploads, the review and approval queue, creating the approved BigCommerce customer, a one-time optional customer-group assignment, and branded emails. BigCommerce handles login and sign-in, catalog and price visibility, and ongoing customer-group membership such as that pushed by an ERP/Acumatica connector."
+            />
+          </div>
         </div>
       </section>
 
