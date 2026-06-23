@@ -20,12 +20,12 @@ const TOC = [
 const REQUIREMENTS = [
   { t: "A BigCommerce store", d: "Any plan. Install from the App Marketplace or your control panel under Apps → My Apps." },
   { t: "Access to Script Manager", d: "You'll add one storefront script to swap the default account page for your custom form. It lives under Storefront → Script Manager." },
-  { t: "Customer groups (optional)", d: "If you want approved applicants assigned to a group — e.g. Wholesale — create the group in BigCommerce first so you can select it." },
+  { t: "Customer groups (optional)", d: "If you want approved applicants assigned to a group - e.g. Wholesale - create the group in BigCommerce first so you can select it." },
 ];
 
 const STEPS = [
   { t: "Install the app", d: "Add Custom Signup Forms from the BigCommerce App Marketplace, or from Apps → My Apps. Your 7-day free trial starts on install." },
-  { t: "Grant the requested permissions", d: "BigCommerce shows the permissions the app needs and asks you to confirm. Approve them to finish — you're returned to the app dashboard." },
+  { t: "Grant the requested permissions", d: "BigCommerce shows the permissions the app needs and asks you to confirm. Approve them to finish - you're returned to the app dashboard." },
   { t: "Build your form", d: "Open the Form Builder, add and arrange your fields, set the layout and branding, and use Live Preview to check it. Save when you're happy." },
   { t: "Generate & install the script", d: "The app generates a storefront script. Add it in Storefront → Script Manager (see below) so the form appears on your create-account page." },
   { t: "Set up emails & approvals", d: "Customise your email templates, choose the customer group for approved accounts, and configure notifications and cooldowns in Settings." },
@@ -76,11 +76,11 @@ export default function InstallationGuide() {
 
             <section id="permissions">
               <h2>Permissions</h2>
-              <p>On install the app requests only the scopes it needs to run the signup flow — nothing about your orders or payments:</p>
+              <p>On install the app requests only the scopes it needs to run the signup flow - nothing about your orders or payments:</p>
               <ul>
-                <li><strong>Customers — modify</strong> — to create approved applicants as real BigCommerce customer accounts.</li>
-                <li><strong>Customer groups — read</strong> — to list your groups so you can assign approved customers to one.</li>
-                <li><strong>Content / Checkout scripts — modify</strong> — to install the storefront script that renders your form.</li>
+                <li><strong>Customers - modify</strong> - to create approved applicants as real BigCommerce customer accounts.</li>
+                <li><strong>Customer groups - read</strong> - to list your groups so you can assign approved customers to one.</li>
+                <li><strong>Content / Checkout scripts - modify</strong> - to install the storefront script that renders your form.</li>
               </ul>
               <div className="note">The app never reads or writes orders or payment data.</div>
             </section>
@@ -122,7 +122,7 @@ export default function InstallationGuide() {
               <h3>Approved customers aren&apos;t in the right group</h3>
               <p>Open <strong>Settings</strong> and confirm the default customer group is set. Groups must exist in BigCommerce before they appear in the list.</p>
               <div className="note" style={{ marginTop: 16 }}>
-                Still stuck? Email <a href={LINKS.support}>{LINKS.email}</a> — we reply within one business day.
+                Still stuck? Email <a href={LINKS.support}>{LINKS.email}</a> - we reply within one business day.
               </div>
             </section>
           </article>

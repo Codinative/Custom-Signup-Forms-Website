@@ -6,36 +6,36 @@ import SignupPreview from "@/components/SignupPreview";
 import { LINKS } from "@/lib/site";
 
 const FEATURES = [
-  { ic: "builder", t: "Visual form builder", d: "Drag-and-drop builder with live preview. Add, reorder and group fields into rows, and style colours, fonts, borders and spacing — no code, no theme edits." },
+  { ic: "builder", t: "Visual form builder", d: "Drag-and-drop builder with live preview. Add, reorder and group fields into rows, and style colours, fonts, borders and spacing - no code, no theme edits." },
   { ic: "fields", t: "Every field type", d: "Text, email, phone, number, textarea, select, radio, checkbox, date, URL, country/state pickers, and file uploads for documents like trade licences." },
   { ic: "userCheck", t: "Approve every request", d: "New signups land in a review queue, not straight into your customer list. Approve to create the BigCommerce account, reject, or ask for more information." },
-  { ic: "mail", t: "Automated emails", d: "Branded HTML templates for submission, approval, rejection and resubmission — with your logo, colours and dynamic placeholders. Send a test before going live." },
-  { ic: "group", t: "Auto customer groups", d: "Approved applicants are created in BigCommerce and assigned to the customer group you choose — instant wholesale or members-only pricing and access." },
+  { ic: "mail", t: "Automated emails", d: "Branded HTML templates for submission, approval, rejection and resubmission - with your logo, colours and dynamic placeholders. Send a test before going live." },
+  { ic: "group", t: "Auto customer groups", d: "Approved applicants are created in BigCommerce and assigned to the customer group you choose - instant wholesale or members-only pricing and access." },
   { ic: "palette", t: "On-brand & responsive", d: "Center or split-screen layouts with your own imagery. Forms match your store and work beautifully on desktop and mobile." },
 ];
 
 const FLOW = [
-  { t: "Build your form", d: "Design the signup form in the visual builder — fields, layout, branding — and save it." },
+  { t: "Build your form", d: "Design the signup form in the visual builder - fields, layout, branding - and save it." },
   { t: "Add the script", d: "Drop the generated script into Script Manager. It replaces the default account page with your form." },
-  { t: "Shoppers apply", d: "Visitors complete your custom form — including file uploads — and their request is captured." },
+  { t: "Shoppers apply", d: "Visitors complete your custom form - including file uploads - and their request is captured." },
   { t: "You approve", d: "Review each request and approve it. The customer account is created and the welcome email goes out." },
 ];
 
 const USECASES = [
   { ic: "group", t: "B2B & wholesale", d: "Vet resellers before they get trade pricing. Collect a trade licence and company details, approve, and drop them into your wholesale group." },
   { ic: "shield", t: "Members-only stores", d: "Gate registration behind your approval so only vetted customers can create an account and shop." },
-  { ic: "form", t: "Custom applications", d: "Loyalty programmes, dealer networks, event access — any flow where you need more than name and email up front." },
+  { ic: "form", t: "Custom applications", d: "Loyalty programmes, dealer networks, event access - any flow where you need more than name and email up front." },
 ];
 
 const FAQS = [
-  { q: "How does it replace the default BigCommerce signup form?", a: "The app generates a lightweight script you add in Storefront → Script Manager. On the create-account page it swaps the default form for your custom one — no theme files to edit, and you can remove it any time by deleting the script." },
+  { q: "How does it replace the default BigCommerce signup form?", a: "The app generates a lightweight script you add in Storefront → Script Manager. On the create-account page it swaps the default form for your custom one - no theme files to edit, and you can remove it any time by deleting the script." },
   { q: "Do customers get an account immediately?", a: "Only if you want them to. By default every submission becomes a request you review. When you approve it, the app creates the customer in BigCommerce and assigns your chosen customer group. You can also reject or ask for more information." },
   { q: "Can I collect file uploads, like a trade licence?", a: "Yes. The file-upload field lets applicants attach documents, which are stored securely and shown with the request so you can verify before approving." },
   { q: "Which emails can I customise?", a: "Submission confirmation, approval, rejection and resubmission requests. Each is a branded HTML template with your logo, colours, banner and CTA, and supports dynamic placeholders like the customer's name. Send yourself a test first." },
   { q: "What permissions does the app need?", a: "Customer management (to create approved accounts), customer groups (to assign them), and storefront scripts (to install the form). It does not touch your orders or payments." },
-  { q: "Does it block login or hide catalog prices for pending customers?", a: "It gates account creation — not the storefront itself. A pending applicant has no BigCommerce account yet, so there is simply nothing to log into until you approve them. On approval the app creates their account with a secure password reset so they can sign in. It does not hide catalog or pricing on its own: what visitors see is governed by your BigCommerce settings — your “require login to see prices” option and your customer-group price lists. The app supports that model by making sure only approved customers get an account, and land in the customer group whose pricing you've configured." },
-  { q: "Will it conflict with an ERP/connector (e.g. Acumatica) that manages customer groups?", a: "No. The app assigns a customer group only once — at the moment it creates the approved customer — and only if you pick a group on approval (it's optional). It never runs an ongoing sync or re-assigns groups afterwards, so it won't fight a connector that pushes group membership. If you want your ERP to be the single source of truth for groups, just leave the group unset on approval and let the connector handle it." },
-  { q: "What does it cost?", a: "Every install starts with a 7-day free trial. After that it's a flat USD 100/month, plus a one-time USD 100 setup fee — unlimited forms and requests, no per-signup charges." },
+  { q: "Does it block login or hide catalog prices for pending customers?", a: "It gates account creation - not the storefront itself. A pending applicant has no BigCommerce account yet, so there is simply nothing to log into until you approve them. On approval the app creates their account with a secure password reset so they can sign in. It does not hide catalog or pricing on its own: what visitors see is governed by your BigCommerce settings - your “require login to see prices” option and your customer-group price lists. The app supports that model by making sure only approved customers get an account, and land in the customer group whose pricing you've configured." },
+  { q: "Will it conflict with an ERP/connector (e.g. Acumatica) that manages customer groups?", a: "No. The app assigns a customer group only once - at the moment it creates the approved customer - and only if you pick a group on approval (it's optional). It never runs an ongoing sync or re-assigns groups afterwards, so it won't fight a connector that pushes group membership. If you want your ERP to be the single source of truth for groups, just leave the group unset on approval and let the connector handle it." },
+  { q: "What does it cost?", a: "Every install starts with a 7-day free trial. After that it's a flat USD 100/month, plus a one-time USD 100 setup fee - unlimited forms and requests, no per-signup charges." },
 ];
 
 export default function Home() {
@@ -50,7 +50,7 @@ export default function Home() {
             <span className="eyebrow on-ink"><span className="dot" /> BigCommerce Signup App</span>
             <h1>Custom signup forms, <span className="hl">with approval built in</span>.</h1>
             <p className="lead">
-              Replace the default BigCommerce account form with a branded form you design — then review
+              Replace the default BigCommerce account form with a branded form you design - then review
               and approve every request, assign customer groups, and automate the emails. Built for
               B2B, wholesale and members-only stores.
             </p>
@@ -100,7 +100,7 @@ export default function Home() {
           <div className="sec-head">
             <span className="eyebrow"><span className="dot" /> The signup flow</span>
             <h2 className="h-sec" style={{ marginTop: 12 }}>From application to approved account.</h2>
-            <p className="lead">Four steps — build it once, then review applications as they come in.</p>
+            <p className="lead">Four steps - build it once, then review applications as they come in.</p>
           </div>
           <div className="flow">
             {FLOW.map((s, i) => (
@@ -114,9 +114,9 @@ export default function Home() {
           </div>
 
           <div className="how-figure">
-            <h3 className="how-figure-title">What the app handles — and what stays your BigCommerce setup</h3>
+            <h3 className="how-figure-title">What the app handles - and what stays your BigCommerce setup</h3>
             <p className="how-figure-sub">
-              The app manages the signup &amp; approval — it decides <i>who</i> becomes an approved
+              The app manages the signup &amp; approval - it decides <i>who</i> becomes an approved
               customer and, optionally, which group they land in. It does <b>not</b> block storefront
               login or hide catalog prices, and it won&apos;t fight an ERP/Acumatica connector that owns
               customer-group membership.
@@ -139,7 +139,7 @@ export default function Home() {
             <h2 className="h-sec" style={{ marginTop: 12 }}>Review every applicant in one queue.</h2>
             <p className="lead" style={{ marginTop: 14 }}>
               Each submission lands in your dashboard with the full form data and any uploaded files.
-              Approve to create the account, reject, or request more information — one at a time or in bulk.
+              Approve to create the account, reject, or request more information - one at a time or in bulk.
             </p>
             <ul className="checks">
               <li><span className="ck"><Icon name="check" /></span><div><b>See everything before you decide.</b><br /><span>Full submission details and documents on every request.</span></div></li>
@@ -198,7 +198,7 @@ export default function Home() {
           <div className="sec-head">
             <span className="eyebrow"><span className="dot" /> Pricing</span>
             <h2 className="h-sec" style={{ marginTop: 12 }}>One simple plan.</h2>
-            <p className="lead">Start with a free trial. No per-signup fees, no field limits — everything included.</p>
+            <p className="lead">Start with a free trial. No per-signup fees, no field limits - everything included.</p>
           </div>
           <div className="plan-wrap">
             <div className="plan">
@@ -207,7 +207,7 @@ export default function Home() {
                 <div className="plan-price">
                   <b>$100</b><span>/ month</span>
                 </div>
-                <p className="plan-sub">Plus a one-time $100 setup fee. Try every feature free for 7 days — cancel any time by uninstalling.</p>
+                <p className="plan-sub">Plus a one-time $100 setup fee. Try every feature free for 7 days - cancel any time by uninstalling.</p>
               </div>
               <div className="plan-body">
                 <ul className="checks">
@@ -233,7 +233,7 @@ export default function Home() {
           <div className="sec-head">
             <span className="eyebrow"><span className="dot" /> Documentation</span>
             <h2 className="h-sec" style={{ marginTop: 12 }}>Guides for every step.</h2>
-            <p className="lead">Everything you need to install the app and run your signup flow — reviewable before you install.</p>
+            <p className="lead">Everything you need to install the app and run your signup flow - reviewable before you install.</p>
           </div>
           <div className="dgrid">
             <Link href="/docs/installation" className="dcard">
@@ -276,7 +276,7 @@ export default function Home() {
           <div className="cta">
             <div className="cta-in">
               <h2>Ready to own your signup flow?</h2>
-              <p>Install Custom Signup Forms, design your form, and start approving the right customers — live in minutes, free for 7 days.</p>
+              <p>Install Custom Signup Forms, design your form, and start approving the right customers - live in minutes, free for 7 days.</p>
               <div className="cta-btns">
                 <a href={LINKS.marketplace} target="_blank" rel="noopener" className="btn btn-primary btn-lg">
                   <Icon name="store" size={18} /> Get it on BigCommerce

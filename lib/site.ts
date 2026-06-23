@@ -3,7 +3,7 @@ export const APP_NAME = "Custom Signup Forms";
 export const APP_TAGLINE = "Custom signup forms, request approvals & email automation for BigCommerce.";
 export const VENDOR = "Codinative";
 
-/** Links — update these once the listing + app URLs are final. */
+/** Links - update these once the listing + app URLs are final. */
 export const LINKS = {
   // BigCommerce marketplace listing (live).
   marketplace: "https://www.bigcommerce.com/apps/custom-signup-forms-by-codinative/",

@@ -4,7 +4,7 @@
   "private": true,
   "license": "UNLICENSED",
   "author": "Codinative",
-  "description": "Marketing site for Custom Signup Forms — a BigCommerce custom signup form builder, request approval & email automation app by Codinative.",
+  "description": "Marketing site for Custom Signup Forms - a BigCommerce custom signup form builder, request approval & email automation app by Codinative.",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",

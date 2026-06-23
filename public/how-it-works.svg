@@ -11,7 +11,7 @@
 
   <!-- title -->
   <text x="40" y="54" font-size="26" font-weight="800" fill="#0c0e13">How Custom Signup Forms works</text>
-  <text x="40" y="84" font-size="14" fill="#4a525e">From application to approved account — and a clear line between what the app does and what stays your BigCommerce setup.</text>
+  <text x="40" y="84" font-size="14" fill="#4a525e">From application to approved account - and a clear line between what the app does and what stays your BigCommerce setup.</text>
 
   <!-- ============ STEP CARDS ============ -->
   <!-- arrows -->
@@ -26,7 +26,7 @@
     <circle cx="34" cy="40" r="18" fill="#3B82F6"/>
     <text x="34" y="46" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">1</text>
     <text x="20" y="96" font-size="15" font-weight="700" fill="#14181f">Build the form</text>
-    <text x="20" y="122" font-size="12.5" fill="#4a525e"><tspan x="20" dy="0">Design fields, layout</tspan><tspan x="20" dy="17">and branding in the</tspan><tspan x="20" dy="17">visual builder — no code.</tspan></text>
+    <text x="20" y="122" font-size="12.5" fill="#4a525e"><tspan x="20" dy="0">Design fields, layout</tspan><tspan x="20" dy="17">and branding in the</tspan><tspan x="20" dy="17">visual builder - no code.</tspan></text>
   </g>
 
   <!-- Step 2 -->
@@ -104,7 +104,7 @@
     <g transform="translate(32,76)">
       <circle cx="6" cy="-4" r="4" fill="#7b828f"/>
       <text x="26" y="0" font-size="13.5" font-weight="700" fill="#14181f">Login / sign-in</text>
-      <text x="26" y="20" font-size="12.5" fill="#4a525e">No account exists until you approve — nothing to log into.</text>
+      <text x="26" y="20" font-size="12.5" fill="#4a525e">No account exists until you approve - nothing to log into.</text>
 
       <g transform="translate(0,66)"><circle cx="6" cy="-4" r="4" fill="#7b828f"/>
       <text x="26" y="0" font-size="13.5" font-weight="700" fill="#14181f">Catalog &amp; price visibility</text>
@@ -113,10 +113,10 @@
       <g transform="translate(0,132)"><circle cx="6" cy="-4" r="4" fill="#7b828f"/>
       <text x="26" y="0" font-size="13.5" font-weight="700" fill="#14181f">Ongoing customer-group membership</text>
       <text x="26" y="20" font-size="12.5" fill="#4a525e">e.g. pushed by your ERP / Acumatica connector. The app</text>
-      <text x="26" y="38" font-size="12.5" fill="#4a525e">won't fight it — it never re-assigns groups after creation.</text></g>
+      <text x="26" y="38" font-size="12.5" fill="#4a525e">won't fight it - it never re-assigns groups after creation.</text></g>
     </g>
   </g>
 
   <!-- footer note -->
-  <text x="640" y="752" text-anchor="middle" font-size="12.5" fill="#7b828f">The app controls <tspan font-style="italic">who</tspan> becomes an approved customer and in which group — it doesn't block login or hide prices, and it won't fight an ERP that owns group membership.</text>
+  <text x="640" y="752" text-anchor="middle" font-size="12.5" fill="#7b828f">The app controls <tspan font-style="italic">who</tspan> becomes an approved customer and in which group - it doesn't block login or hide prices, and it won't fight an ERP that owns group membership.</text>
 </svg>

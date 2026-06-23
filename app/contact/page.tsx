@@ -7,7 +7,7 @@ import { VENDOR, LINKS } from "@/lib/site";
 
 export const metadata = {
   title: "Contact",
-  description: "Get in touch with Codinative — support and questions about Custom Signup Forms.",
+  description: "Get in touch with Codinative - support and questions about Custom Signup Forms.",
 };
 
 const host = LINKS.vendor.replace(/^https?:\/\//, "").replace(/\/$/, "");
@@ -28,7 +28,7 @@ export default function ContactPage() {
           <div className="doc-crumb"><Link href="/">Home</Link> <Icon name="chevR" size={13} /> Contact</div>
           <span className="eyebrow"><span className="dot" /> Contact</span>
           <h1 style={{ marginTop: 12 }}>Get in touch.</h1>
-          <p className="lead">Built and supported by {VENDOR}. Reach out any time — we typically reply within one business day.</p>
+          <p className="lead">Built and supported by {VENDOR}. Reach out any time - we typically reply within one business day.</p>
         </div>
       </section>
 
@@ -42,7 +42,7 @@ export default function ContactPage() {
                 <p>BigCommerce-only development agency</p>
               </div>
               <a className="contact-badge" href={LINKS.vendor} target="_blank" rel="noopener"
-                aria-label="Codinative — Certified BigCommerce Partner">
+                aria-label="Codinative - Certified BigCommerce Partner">
                 <PartnerBadge height={40} />
               </a>
             </div>

@@ -1,10 +1,10 @@
-# Custom Signup Forms — marketing website
+# Custom Signup Forms - marketing website
 
 The marketing + documentation site for **Custom Signup Forms**, a BigCommerce app by
 [Codinative](https://codinative.com) that replaces the default account-signup form with a
-branded, custom form — with request approval, customer-group assignment, and automated emails.
+branded, custom form - with request approval, customer-group assignment, and automated emails.
 
-Built with **Next.js 15** (App Router) + **React 19** + TypeScript. No database, no API —
+Built with **Next.js 15** (App Router) + **React 19** + TypeScript. No database, no API -
 a static, fast marketing SPA intended for `custom-signup-forms.codinative.com`.
 
 ## Live site & links

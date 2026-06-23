@@ -15,11 +15,11 @@ const RESOURCES = [
   { href: "/docs/user-guide", external: false, ic: "book", t: "User guide",
     d: "Day-to-day usage: the form builder, request approvals, email templates, customer groups and settings." },
   { href: "/docs/privacy-policy", external: false, ic: "shield", t: "Privacy policy",
-    d: "What data the app accesses and stores — including applicant submissions and uploads." },
+    d: "What data the app accesses and stores - including applicant submissions and uploads." },
   { href: "/docs/terms-of-service", external: false, ic: "doc", t: "Terms of service",
     d: "The terms for using the app: service, responsibilities, billing and liability." },
   { href: "/contact", external: false, ic: "mail", t: "Contact & support",
-    d: "Questions or issues? Reach the Codinative team — we reply within one business day." },
+    d: "Questions or issues? Reach the Codinative team - we reply within one business day." },
   { href: LINKS.marketplace, external: true, ic: "store", t: "Get the app",
     d: "Install Custom Signup Forms on your BigCommerce store from the App Marketplace." },
 ];
@@ -33,7 +33,7 @@ export default function DocsHome() {
           <div className="doc-crumb"><Link href="/">Home</Link> <Icon name="chevR" size={13} /> Docs</div>
           <span className="eyebrow"><span className="dot" /> Documentation</span>
           <h1 style={{ marginTop: 12 }}>Everything in one place.</h1>
-          <p className="lead">Guides, policies and support for Custom Signup Forms — the BigCommerce custom signup form builder with request approval and email automation.</p>
+          <p className="lead">Guides, policies and support for Custom Signup Forms - the BigCommerce custom signup form builder with request approval and email automation.</p>
         </div>
       </section>
 

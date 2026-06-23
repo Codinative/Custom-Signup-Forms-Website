@@ -1,4 +1,4 @@
-/** Brand glyph — a stylised signup form + checkmark, in the blue brand gradient. */
+/** Brand glyph - a stylised signup form + checkmark, in the blue brand gradient. */
 export default function BrandMark({ size = 34, radius = 10 }: { size?: number; radius?: number }) {
   return (
     <span className="mark" style={{ width: size, height: size, borderRadius: radius }}>

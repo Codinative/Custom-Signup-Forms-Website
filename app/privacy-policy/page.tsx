@@ -36,9 +36,9 @@ export default function PrivacyPage() {
             <h2>Information we access</h2>
             <p>When a merchant installs the App via BigCommerce OAuth, we request only the permissions needed to run the signup flow:</p>
             <ul>
-              <li><strong>Customers</strong> — to create approved applicants as BigCommerce customer accounts.</li>
-              <li><strong>Customer groups</strong> — to list groups and assign approved customers to one.</li>
-              <li><strong>Storefront scripts</strong> — to install the script that renders your form on the create-account page.</li>
+              <li><strong>Customers</strong> - to create approved applicants as BigCommerce customer accounts.</li>
+              <li><strong>Customer groups</strong> - to list groups and assign approved customers to one.</li>
+              <li><strong>Storefront scripts</strong> - to install the script that renders your form on the create-account page.</li>
             </ul>
             <p>The App does <strong>not</strong> access orders or payment data.</p>
           </section>
@@ -49,7 +49,7 @@ export default function PrivacyPage() {
             <ul>
               <li>Your <strong>store hash</strong> and the <strong>OAuth access token</strong> issued by BigCommerce at install.</li>
               <li>The <strong>store user(s)</strong> who installed or were granted access to the App (id, email, username).</li>
-              <li>Your <strong>configuration</strong> — form designs, email templates, notification and cooldown settings, and the default customer group.</li>
+              <li>Your <strong>configuration</strong> - form designs, email templates, notification and cooldown settings, and the default customer group.</li>
               <li>Your <strong>subscription status</strong> for billing (see Third-party processors).</li>
             </ul>
           </section>
@@ -68,11 +68,11 @@ export default function PrivacyPage() {
           <section>
             <h2>Third-party processors</h2>
             <ul>
-              <li><strong>BigCommerce</strong> — the platform the App integrates with.</li>
-              <li><strong>Google Firebase / Firestore &amp; Storage</strong> — stores configuration, requests and uploaded files.</li>
-              <li><strong>Vercel</strong> — hosts the App.</li>
-              <li><strong>Brevo (or your configured SMTP service)</strong> — delivers confirmation and notification emails.</li>
-              <li><strong>Stripe</strong> — processes subscription billing.</li>
+              <li><strong>BigCommerce</strong> - the platform the App integrates with.</li>
+              <li><strong>Google Firebase / Firestore &amp; Storage</strong> - stores configuration, requests and uploaded files.</li>
+              <li><strong>Vercel</strong> - hosts the App.</li>
+              <li><strong>Brevo (or your configured SMTP service)</strong> - delivers confirmation and notification emails.</li>
+              <li><strong>Stripe</strong> - processes subscription billing.</li>
             </ul>
             <p>We do not sell or share your data with advertisers, and we do not use it for any purpose other than operating the App.</p>
           </section>
