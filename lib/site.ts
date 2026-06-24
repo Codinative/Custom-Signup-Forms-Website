@@ -2,6 +2,8 @@
 export const APP_NAME = "Custom Signup Forms";
 export const APP_TAGLINE = "Custom signup forms, request approvals & email automation for BigCommerce.";
 export const VENDOR = "Codinative";
+/** Canonical public origin (no trailing slash) - used for metadata + structured data. */
+export const SITE_URL = "https://custom-signup-forms.codinative.com";
 
 /** Links - update these once the listing + app URLs are final. */
 export const LINKS = {
