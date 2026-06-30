@@ -5,6 +5,10 @@ import Icon from "@/components/Icon";
 import SignupPreview from "@/components/SignupPreview";
 import { APP_NAME, VENDOR, SITE_URL, LINKS } from "@/lib/site";
 
+export const metadata = {
+  alternates: { canonical: "/" },
+};
+
 const FEATURES = [
   { ic: "builder", t: "Visual form builder", d: "Drag-and-drop builder with live preview. Add, reorder and group fields into rows, and style colours, fonts, borders and spacing - no code, no theme edits." },
   { ic: "fields", t: "Every field type", d: "Text, email, phone, number, textarea, select, radio, checkbox, date, URL, country/state pickers, and file uploads for documents like trade licences." },

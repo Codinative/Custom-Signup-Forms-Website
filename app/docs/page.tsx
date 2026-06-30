@@ -5,8 +5,10 @@ import Icon from "@/components/Icon";
 import { LINKS } from "@/lib/site";
 
 export const metadata = {
-  title: "Documentation",
-  description: "All guides, policies and support for Custom Signup Forms in one place.",
+  title: { absolute: "Custom Signup Forms Docs - Setup Guide | BigCommerce" },
+  description:
+    "Learn how to install and configure Custom Signup Forms for BigCommerce. Step-by-step setup, field builder, approval workflows and more.",
+  alternates: { canonical: "/docs" },
 };
 
 const RESOURCES = [

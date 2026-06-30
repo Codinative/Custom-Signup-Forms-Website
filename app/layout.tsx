@@ -9,11 +9,11 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   verification: { google: "mE51E51lm1Lwm73kSnZ_DXll15Ab0zp2aWaCnir5q2s" },
   title: {
-    default: "Custom Signup Forms - custom registration forms for BigCommerce",
+    default: "Custom Signup Forms - B2B Registration for BigCommerce",
     template: "%s - Custom Signup Forms",
   },
   description:
-    "A BigCommerce app by Codinative that replaces the default account signup with a branded, custom form - build fields visually, review and approve requests, and automate the emails. Perfect for B2B, wholesale and members-only stores.",
+    "Replace the default BigCommerce signup with a custom branded form. Build fields visually, approve requests, and automate emails for B2B and wholesale stores.",
   keywords: [
     "BigCommerce signup form", "custom registration form", "B2B signup", "wholesale registration",
     "customer approval", "form builder", "Codinative", "customer groups", "account approval",
